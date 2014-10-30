@@ -4,7 +4,7 @@
 
 
 //指定要代理的网址
-var autoproxy_host = {
+var autoproxy_host_custom = {
     'twitter.com': 1, //下面是twitter的服务
     'twimg.com': 1,
     't.co': 1,
@@ -17,13 +17,13 @@ var autoproxy_host = {
 };
 
 //指定要墙掉的网址
-var blackhole_host = {
+var blackhole_host_custom = {
     '113.17.188.42': 1,
     'zvweapp.com': 1
 };
 
 //指定域名后缀
-var domain_host = {
+var domain_host_custom = {
     'ly': 1
 };
 //指定代理的网址和端口
@@ -46,7 +46,6 @@ function FindProxyForURL(url, host) {
                dnsDomainIs(host, '.doubleclick.net')) {
         return blackhole;
     } else if (shExpMatch(host, '*.google*.*') ||
-               dnsDomainIs(host, '.ggpht.com') ||
                dnsDomainIs(host, '.sf.net') ||
                /* host.indexOf('.ly/') ||  //这里有个功能是自己添加后缀，比如说ly网址后缀都是被墙掉的 */
                host == 'sourceforge.net' ||
@@ -58,7 +57,7 @@ function FindProxyForURL(url, host) {
 }
 
 function FindProxyForURLByAdblock(url, host) {
-    if (blackhole_host.hasOwnProperty(host)) {
+    if (blackhole_host_custom.hasOwnProperty(host)) {
         return blackhole;
         /* return 'no influence whatever you write'; */
     }
@@ -68,14 +67,13 @@ function FindProxyForURLByAdblock(url, host) {
 function FindProxyForURLByAutoProxy(url, host) {
     var lastPos;
     do {
-        if (autoproxy_host.hasOwnProperty(host)) {
-            /* return 'PROXY 127.0.0.1:8087'; */
+        if (autoproxy_host_custom.hasOwnProperty(host)) {
             return autoproxy;
         }
         lastPos = host.indexOf('.') + 1;
         host = host.slice(lastPos);
         domain_postfix = host;
-        if (domain_host.hasOwnProperty(domain_postfix)) {
+        if (domain_host_custom.hasOwnProperty(domain_postfix)) {
             return autoproxy;
         }
     } while (lastPos >= 1);
