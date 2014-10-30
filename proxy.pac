@@ -1,7 +1,9 @@
 // Borrowing from : goagent 和 cow的pac配置文件
-// author : yantze
 // last change : 2014/10/31
+// author : yantze
 
+
+//指定要代理的网址
 var autoproxy_host = {
     'twitter.com': 1, //下面是twitter的服务
     'twimg.com': 1,
@@ -13,10 +15,14 @@ var autoproxy_host = {
     'hootsuite.com': 1,  //这是一个管理微博和twitter的平台
     'wordpress.com': 1
 };
+
+//指定要墙掉的网址
 var blackhole_host = {
     '113.17.188.42': 1,
     'zvweapp.com': 1
 };
+
+//指定域名后缀
 var domain_host = {
     'ly': 1
 };
@@ -24,6 +30,8 @@ var domain_host = {
 /* var autoproxy = 'PROXY 127.0.0.1:7777'; //这个是使用cow二次代理软件，goagent不行的时候用 */
 var autoproxy = 'PROXY 127.0.0.1:8087';
 var blackhole = 'PROXY 127.0.0.1:8086';
+
+
 function FindProxyForURL(url, host) {
     var defaultproxy = 'DIRECT';
     if (isPlainHostName(host) ||
