@@ -25,16 +25,17 @@ host.indexOf('.ly/') 看到这行了吗？这个是可以添加网站域的,同d
 
 ##使用方法
 
-### 使用ie做全局代理
->打开ie的因特网(internet options)选项，选择连接(connections),左下有一个局域网连接(lan settings),点击使用自动配置脚本(Use automatic configuration script)，添加你proxy.pac文件的路径(file://e:\program\misc\proxy.pac),点确定就可以了。
+#### 使用ie做全局代理
+>打开ie的因特网(internet options)选项，选择连接(connections),右下有一个局域网连接(lan settings),点击使用自动配置脚本(Use automatic configuration script)，添加你proxy.pac文件的路径(file://e:\program\misc\proxy.pac),点确定就可以了。
 
-### 使用浏览器代理
+#### 使用浏览器代理
 >可以使用switchsharp或者foxyproxy来添加一个简单的pac代理就行。
 
-### 快速编辑pac文件
->在系统目录创建一个快捷方式，添加路径：C:\Windows\gvim.bat e:\program\misc\proxy.pac，或者你喜欢的编辑器，然后按照上面讲的方法添加网址。
+#### 快速编辑pac文件
+>在系统目录创建一个快捷方式，添加路径：C:\Windows\gvim.bat e:\program\misc\proxy.pac，或者你喜欢的编辑器，然后按照上面讲的方法添加网址，命名为ep。以后直接按win+r可以快速打开文件编辑
 
 
 ##声明
 本配置参考自goagent和cow的pac文档
+
 [MIT LICENSE](https://github.com/yantze/pacconf/blob/master/LICENSE)
