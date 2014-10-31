@@ -13,6 +13,8 @@ var autoproxy_host_custom = {
     'cdninstagram.com': 1,
     'feedly.com': 1,  //rss推送平台
     'hootsuite.com': 1,  //这是一个管理微博和twitter的平台
+    'amazonaws.com': 1,
+    'businessweek.com': 1,
     'wordpress.com': 1
 };
 
