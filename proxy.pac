@@ -1,6 +1,13 @@
 // Borrowing from : goagent 和 cow的pac配置文件
 // last change : 2014/10/31
+// project : http://github.com/yantze/pacconf
 // author : yantze
+
+//指定代理的网址和端口
+/* var autoproxy = 'PROXY 127.0.0.1:7777'; //这个是使用cow二次代理软件，goagent不行的时候用 */
+/* var autoproxy = 'PROXY 127.0.0.1:8088'; */
+var autoproxy = 'PROXY 127.0.0.1:8087';
+var blackhole = 'PROXY 127.0.0.1:8086';
 
 
 //指定要代理的网址
@@ -15,12 +22,23 @@ var autoproxy_host_custom = {
     'hootsuite.com': 1,  //这是一个管理微博和twitter的平台
     'amazonaws.com': 1,
     'businessweek.com': 1,
+    'klip.me': 1,
+    'quora.com': 1,
+    'archive.org': 1,
+    'blogspot.org': 1,
+    'slideshare.net': 1,
+    'facebook.com': 1,
+    'fb.me': 1,
+    'flickr.com': 1,
+    'nytimes.com': 1,
+    'gstatic.com': 1,
     'wordpress.com': 1
 };
 
 //指定要墙掉的网址
 var blackhole_host_custom = {
     '113.17.188.42': 1,
+    'grooveshark.com': 1,
     'zvweapp.com': 1
 };
 
@@ -28,11 +46,6 @@ var blackhole_host_custom = {
 var domain_host_custom = {
     'ly': 1
 };
-//指定代理的网址和端口
-/* var autoproxy = 'PROXY 127.0.0.1:7777'; //这个是使用cow二次代理软件，goagent不行的时候用 */
-var autoproxy = 'PROXY 127.0.0.1:8087';
-var blackhole = 'PROXY 127.0.0.1:8086';
-
 
 function FindProxyForURL(url, host) {
     var defaultproxy = 'DIRECT';
@@ -49,7 +62,7 @@ function FindProxyForURL(url, host) {
         return blackhole;
     } else if (shExpMatch(host, '*.google*.*') ||
                dnsDomainIs(host, '.sf.net') ||
-               /* host.indexOf('.ly/') ||  //这里有个功能是自己添加后缀，比如说ly网址后缀都是被墙掉的 */
+               /* host.indexOf('.ly/') || */
                host == 'sourceforge.net' ||
                host == 'goo.gl') {
         return autoproxy;

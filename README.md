@@ -8,9 +8,9 @@ goagent和其它的一些vpn代理都是自己写一个pac代理，但是在下�
 - 不通用：不同的代理程序需要不同的pac配置
 
 
-其实[cow](https://github.com/cyfdecyf/cow)本身是一个全平台的二级代理软件，能自动对“超时”的网页代理，比较智能，但是使用一段时间后，发现总是感觉访问网页有些慢。虽然也有自己指定自动代理列表，总感觉不够纯粹和通用。
+[cow](https://github.com/cyfdecyf/cow)本身是一个全平台的二次代理软件，能自动对“超时”的网页代理，比较智能，但是使用一段时间后，总是感觉访问网页有些慢。虽然也有自己指定自动代理列表，总感觉不够纯粹和通用。
 
-但是这个配置可以和goagent、ss与cow结合使用。goagent3.2比较好用。
+本项目的这个配置可以和goagent、ss与cow结合使用。另外goagent3.2比较好用。
 
 ##手动指定要代理的网址
 直接编辑proxy.pac文件
@@ -32,8 +32,12 @@ host.indexOf('.ly/') 看到这行了吗？这个是可以添加网站域的,同d
 >可以使用switchsharp或者foxyproxy来添加一个简单的pac代理就行。
 
 #### 快速编辑pac文件
->在系统目录创建一个快捷方式，添加路径：C:\Windows\gvim.bat e:\program\misc\proxy.pac，或者你喜欢的编辑器，然后按照上面讲的方法添加网址，命名为ep。以后直接按win+r可以快速打开文件编辑
+>在系统目录右键创建一个快捷方式，添加路径：notepad.exe e:\program\misc\proxy.pac，或者你喜欢的编辑器，命名快捷方式为ep。以后要修改proxy.pac文件，直接按win+r弹出运行窗口，输入ep可以快速打开文件编辑
 
+####TODO:有个问题
+用其它浏览器都可以正常使用，但是ie不能使用这个配置，不明白为什么。
+已经尝试修改编码和换行符，但都不可行
+使用goagent自带的proxy.pac就可以
 
 ##声明
 本配置参考自goagent和cow的pac文档
