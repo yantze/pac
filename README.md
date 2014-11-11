@@ -27,17 +27,13 @@ host.indexOf('.ly/') 看到这行了吗？这个是可以添加网站域的,同d
 
 #### 使用ie做全局代理
 >打开ie的因特网(internet options)选项，选择连接(connections),右下有一个局域网连接(lan settings),点击使用自动配置脚本(Use automatic configuration script)，添加你proxy.pac文件的路径(file://e:\program\misc\proxy.pac),点确定就可以了。
+>这个已经在ie10之后的版本中被弃用，要让它生效，修改注册表的HKLM\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\  Value: EnableLegacyAutoProxyFeatures  Type:  REG_DWORD  Data:  1
 
 #### 使用浏览器代理
 >可以使用switchsharp或者foxyproxy来添加一个简单的pac代理就行。
 
 #### 快速编辑pac文件
 >在系统目录右键创建一个快捷方式，添加路径：notepad.exe e:\program\misc\proxy.pac，或者你喜欢的编辑器，命名快捷方式为ep。以后要修改proxy.pac文件，直接按win+r弹出运行窗口，输入ep可以快速打开文件编辑
-
-####TODO:有个问题
-用其它浏览器都可以正常使用，但是ie不能使用这个配置，不明白为什么。
-已经尝试修改编码和换行符，但都不可行
-使用goagent自带的proxy.pac就可以
 
 ##声明
 本配置参考自goagent和cow的pac文档
