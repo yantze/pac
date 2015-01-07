@@ -40,13 +40,21 @@ var autoproxy_host_custom = {
     'flickr.com': 1,
     'duckduckgo.com': 1,
     'gstatic.com': 1,
+    'google-analytics.com': 1,
+    'googleusercontent.com': 1,
     'googleapis.com': 1,
     'spotify.com': 1,
     'cloudfront.net': 1,
     'last.fm': 1,
+    'ttost.com': 1, //听听原声
     'optimizely.com': 1,
     'nytimes.com': 1, //以下作为不必知的网址
     'plurk.com': 1,
+    'dailymotion.com': 1,
+    'dmcdn.net': 1,
+    'tubemogul.com': 1,
+    'liverail.com': 1,
+    'visiblemeasures.com': 1,
     'engadget.com': 1,
     'pixnet.net': 1,
     'books.com.tw': 1,
@@ -56,6 +64,7 @@ var autoproxy_host_custom = {
     'echofon.com': 1,
     'j.mp': 1,
     'w.org': 1,
+    'typekit.net': 1,
     'businessweek.com': 1,
     'wordpress.com': 1
 };
