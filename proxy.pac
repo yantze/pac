@@ -11,12 +11,84 @@
 //指定代理的网址和端口
 /* var autoproxy = 'PROXY 127.0.0.1:7777'; //这个是使用cow二次代理软件，goagent不行的时候用 */
 /* var autoproxy = 'PROXY 127.0.0.1:8088'; */
-var autoproxy = 'PROXY 127.0.0.1:8087';
+//var autoproxy = 'PROXY 127.0.0.1:8087';
+var autoproxy = 'PROXY 127.0.0.1:7777';
 var blackhole = 'PROXY 127.0.0.1:8086';
 
+var autoproxy_host_custom = {
+    'btspread.com':1,
+    'skitch.com':1,
+    'w3schools.com':1,
+    'lvv2.com':1,
+    'fbcdn.net':1,
+    'pastebin.com':1,
+    'btdigg.org':1,
+    'wp.com':1,
+    'wordpress.com':1,
+    'piazza.com':1,
+    'imgur.com':1,
+    'blogblog.com':1,
+    'blogger.com':1,
+    'gravatar.com':1,
+    'twitter.com':1,
+    'twimg.com':1,
+    'ytimg.com':1,
+    'ggphd.com':1,
+    't.co':1,
+    'youtube.com':1,
+    'youtu.be':1,
+    'instagram.com':1,
+    'cdninstagram.com':1,
+    'feedly.com':1,
+    'hootsuite.com':1,
+    'amazonaws.com':1,
+    'klip.me':1,
+    'quora.com':1,
+    'archive.org':1,
+    'blogspot.org':1,
+    'blogspot.com':1,
+    'slideshare.net':1,
+    'facebook.com':1,
+    'facebook.net':1,
+    'fb.me':1,
+    'vimeo.com':1,
+    'flickr.com':1,
+    'duckduckgo.com':1,
+    'gstatic.com':1,
+    'google-analytics.com':1,
+    'googleusercontent.com':1,
+    'googleapis.com':1,
+    'spotify.com':1,
+    'cloudfront.net':1,
+    'last.fm':1,
+    'ttost.com':1,
+    'optimizely.com':1,
+    'nytimes.com':1,
+    'plurk.com':1,
+    'dailymotion.com':1,
+    'dmcdn.net':1,
+    'tubemogul.com':1,
+    'liverail.com':1,
+    'visiblemeasures.com':1,
+    'engadget.com':1,
+    'pixnet.net':1,
+    'books.com.tw':1,
+    'dotspace.idv.tw':1,
+    'thepiratebay.org':1,
+    'wired.com':1,
+    'echofon.com':1,
+    'j.mp':1,
+    'w.org':1,
+    'typekit.net':1,
+    'businessweek.com':1,
+    'wordpress.com':1,
+    'sourceforge.net':1,
+    'google*.*':1,
+    'sf.net':1
+};
 
 //指定要代理的网址
-var autoproxy_host_custom = {
+var autoproxy_host_custom_bak = {
     'twitter.com': 1, //下面是twitter的服务
     'twimg.com': 1,
     't.co': 1,
