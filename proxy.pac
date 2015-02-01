@@ -17,6 +17,8 @@ var blackhole = 'PROXY 127.0.0.1:8086';
 
 var autoproxy_host_custom = {
     'btspread.com':1,
+    'appspot.com':1,
+    'github.com':1,
     'skitch.com':1,
     'w3schools.com':1,
     'lvv2.com':1,
