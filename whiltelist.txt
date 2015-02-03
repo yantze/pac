@@ -1,38 +1,43 @@
-// whiltelist for mac/ubuntu system proxy and maxthon/firefox proxy
+# whiltelist for fastest
+
+// mac/ubuntu system proxy
+// mac直接拷贝这行就可以了
 *.local ,169.254/16 ,192.168/16 ,10/8 ,*.baidupcs.com ,*.baidu.com ,*.cn ,*.fm ,*.ip138.com ,*.edu.cn ,*.org.cn ,*.com.cn ,*.v2ex.com ,*.douban.com ,*.cnblogs.com ,*.zhihu.com ,*.sinaapp.com ,*.csdn.net ,*.weibo.com ,*.xiami.com ,*.xiami.net ,*.126.com ,*.163.com ,*.youku.com ,*.taobao.com ,*.alicdn.com ,*.tmall.com ,*.pcbeta.com ,*.jd.com ,*.weibo.com ,*.weibo.cn ,*.qq.com ,*.v2ex.com
 
+// maxthon/firefox proxy
+.baidupcs.com; .baidu.com; .cn; .fm; .ip138.com; .edu.cn; .org.cn; .com.cn; .v2ex.com; .douban.com; .cnblogs.com; .zhihu.com; .sinaapp.com; .csdn.net; .weibo.com; .xiami.com; .xiami.net; .126.com; .163.com; .youku.com; .taobao.com; .alicdn.com; .tmall.com; .pcbeta.com; .jd.com; .weibo.com; .weibo.cn; .qq.com; .v2ex.com;
 
 //未合并
 *.local
-,169.254/16
-,192.168/16
-,10/8
-,*.baidupcs.com
-,*.baidu.com
-,*.cn
-,*.fm
-,*.ip138.com
-,*.edu.cn
-,*.org.cn
-,*.com.cn
-,*.v2ex.com
-,*.douban.com
-,*.cnblogs.com
-,*.zhihu.com
-,*.sinaapp.com
-,*.csdn.net
-,*.weibo.com
-,*.xiami.com
-,*.xiami.net
-,*.126.com
-,*.163.com
-,*.youku.com
-,*.taobao.com
-,*.alicdn.com
-,*.tmall.com
-,*.pcbeta.com
-,*.jd.com
-,*.weibo.com
-,*.weibo.cn
-,*.qq.com
-,*.v2ex.com
+169.254/16
+192.168/16
+10/8
+*.baidupcs.com
+*.baidu.com
+*.cn
+*.fm
+*.ip138.com
+*.edu.cn
+*.org.cn
+*.com.cn
+*.v2ex.com
+*.douban.com
+*.cnblogs.com
+*.zhihu.com
+*.sinaapp.com
+*.csdn.net
+*.weibo.com
+*.xiami.com
+*.xiami.net
+*.126.com
+*.163.com
+*.youku.com
+*.taobao.com
+*.alicdn.com
+*.tmall.com
+*.pcbeta.com
+*.jd.com
+*.weibo.com
+*.weibo.cn
+*.qq.com
+*.v2ex.com
