@@ -1,3 +1,2 @@
 // whiltelist for mac/ubuntu system proxy and maxthon proxy
-.baidupcs.com; .baidu.com; .cn; .fm; .ip138.com; .edu.cn; .org.cn; .com.cn; .v2ex.com; .douban.com; .cnblogs.com; .zhihu.com; .sinaapp.com; .csdn.net; .weibo.com; .xiami.com; .xiami.net; .126.com; .163.com; .youku.com; .taobao.com; .alicdn.com; .tmall.com; .pcbeta.com; .jd.com; .weibo.com; .weibo.cn; .qq.com; .v2ex.com;
-
+192.168.0.0/16; 172.0.0.0/8; 10.0.0.0/8; g.yh.gs; .youdao.com; .baidupcs.com; .baidu.com; .cn; .fm; .edu.cn; .org.cn; .com.cn; .douban.com; .sinaapp.com; .csdn.net; .xiami.com; .xiami.net; .126.com; .163.com; .taobao.com; .taobaocdn.com; .alicdn.com; .tmall.com; .pcbeta.com; .jd.com; .weibo.*; .qq.com; .maxthon.*; .ip138.com; .cnblogs.com; .maxiang.info; .zhihu.com; .sinaimg.com; .youku.com; .tudou.com; .qiniudn.com; .maxiang.info; .upaiyun.com; .tumblr.com;
